@@ -1,0 +1,24 @@
+Plantilla para mejorar el landpage
+MENU
+Inicio → (acceso rápido a la parte superior).
+Quiénes Somos → historia, misión, visión, valores.
+Servicios / Lo que Hacemos → listado claro de lo que ofrece la corporación.
+Proyectos / Casos de Éxito → logros, portafolio, testimonios.
+Equipo → (opcional) para mostrar las personas detrás de la empresa.
+Blog / Noticias → (si quieres generar contenido y mejorar posicionamiento).
+Contáctanos → formulario, ubicación, redes sociales.
+
+POSIBLE PALETA DE COLORES
+Paleta en Escala de Azules
+Más oscuro (Fondo/Headers fuertes) → #0D1B2A
+Oscuro secundario (Secciones/Gradientes) → #1B263B
+Color base (Tu azul principal) → #5FB6D9
+Claro (Detalles, hover, iconos suaves) → #A3D7EC
+Muy claro (Fondos suaves o tarjetas) → #E8F6FB
+
+Para que sea armónico el color:
+Fondo principal: #0D1B2A
+Navbar / secciones destacadas: #1B263B
+Botones / enlaces primarios: #5FB6D9
+Hover de botones / bordes: #A3D7EC
+Texto claro / fondos de tarjetas: #E8F6FB
