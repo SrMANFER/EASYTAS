@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #0D1B2A 0%, #1B263B 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo */
+.logo {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 12px rgba(13, 27, 42, 0.15);
+    text-align: left;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Contenedor Principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.registro-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(13, 27, 42, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.registro-card h2 {
+    color: #0D1B2A;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.registro-card p {
+    color: #1B263B;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #1B263B;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #A3D7EC;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s;
+    background-color: #E8F6FB;
+    color: #0D1B2A;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5FB6D9;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(95, 182, 217, 0.15);
+}
+
+.form-group input::placeholder {
+    color: #1B263B;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+/* Input tipo date */
+.form-group input[type="date"] {
+    color: #0D1B2A;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(15%) saturate(1458%) hue-rotate(171deg) brightness(95%) contrast(91%);
+}
+
+/* Botón Registrar */
+.btn-registrar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #5FB6D9 0%, #1B263B 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(95, 182, 217, 0.3);
+}
+
+.btn-registrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(95, 182, 217, 0.5);
+    background: linear-gradient(135deg, #A3D7EC 0%, #5FB6D9 100%);
+}
+
+.btn-registrar:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 12px rgba(95, 182, 217, 0.4);
+}
+
+/* Mensajes */
+.mensaje-error {
+    background-color: #ffe8e8;
+    color: #c62828;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c62828;
+    font-size: 14px;
+    display: none;
+}
+
+.mensaje-exito {
+    background-color: #E8F6FB;
+    color: #1B263B;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #5FB6D9;
+    font-size: 14px;
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #0D1B2A;
+    color: #E8F6FB;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 -2px 10px rgba(13, 27, 42, 0.3);
+}
+
+.footer p {
+    margin-bottom: 8px;
+    color: #A3D7EC;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #5FB6D9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.footer a:hover {
+    color: #E8F6FB;
+    background-color: #5FB6D9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(95, 182, 217, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .logo {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .registro-card {
+        padding: 30px 20px;
+    }
+
+    .registro-card h2 {
+        font-size: 24px;
+    }
+
+    .registro-card p {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .btn-registrar {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Animación de entrada suave */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.registro-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mejora visual para inputs con error */
+.form-group input:invalid:not(:placeholder-shown) {
+    border-color: #ffb3b3;
+    background-color: #fff5f5;
+}
+
+/* Estilo para inputs correctos */
+.form-group input:valid:not(:placeholder-shown) {
+    border-color: #5FB6D9;
+}
