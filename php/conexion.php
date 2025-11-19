@@ -2,8 +2,8 @@
 $host = "localhost";
 $port = "5432";
 $dbname = "easytas";
-$user = "postgres";
-$password = "F3rn@nd05"; // tu contraseña real
+$user = "admin";
+$password = "1234"; // tu contraseña real
 
 try {
     $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);

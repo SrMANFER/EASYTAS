@@ -61,6 +61,7 @@ formRegistro.addEventListener('submit', function(e) {
     
     // Obtener valores
     const nombre = document.getElementById('nombre').value.trim();
+    const especialidad = document.getElementById('especialidad').value.trim();
     const email = document.getElementById('email').value.trim();
     const telefono = document.getElementById('telefono').value.trim();
     const fechaNacimiento = document.getElementById('fecha_nacimiento').value;
@@ -71,6 +72,13 @@ formRegistro.addEventListener('submit', function(e) {
     if (nombre.length < 3) {
         mostrarError('El nombre debe tener al menos 3 caracteres');
         document.getElementById('nombre').focus();
+        return false;
+    }
+
+    // Validar especialidad
+    if (especialidad.length < 3) {
+        mostrarError('La especialidad debe tener al menos 3 caracteres');
+        document.getElementById('especialidad').focus();
         return false;
     }
     

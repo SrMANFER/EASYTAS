@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - EasyTas</title>
+    <title>Contacto - EasyTas</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
     <!-- Logo -->
@@ -15,15 +15,15 @@
 
     <!-- Contenedor del Formulario -->
     <div class="container">
-        <div class="registro-card">
-            <h2>Crear Cuenta</h2>
-            <p>Únete a EasyTas y encuentra profesionales</p>
+        <div class="contacto-card">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda o sugerencia contactate con nosotros.</p>
 
             <!-- Mensajes de error/éxito -->
             <div class="mensaje-error" id="mensajeError"></div>
             <div class="mensaje-exito" id="mensajeExito"></div>
 
-            <form id="formRegistro" action="../php/procesar_registro_cliente.php" method="POST">
+            <form id="formContacto" action="../php/procesar_contacto.php" method="POST">
                 <!-- Nombre Completo -->
                 <div class="form-group">
                     <label for="nombre">Nombre Completo</label>
@@ -42,37 +42,41 @@
                     <input type="tel" id="telefono" name="telefono" required placeholder="+57 300 123 4567">
                 </div>
 
-                <!-- Fecha de Nacimiento -->
+                <!-- SELECT DESPLEGABLE -->
                 <div class="form-group">
-                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    <label for="tipo_consulta">Tipo de Consulta</label>
+                    <select id="tipo_consulta" name="tipo_consulta" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="duda">❓ Duda</option>
+                        <option value="queja">😞 Queja</option>
+                        <option value="sugerencia">💡 Sugerencia</option>
+                        <option value="otro">📝 Otro</option>
+                    </select>
                 </div>
 
-                <!-- Contraseña -->
+            <!-- Mensaje -->
                 <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required placeholder="Mínimo 6 caracteres">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí...">
                 </div>
 
-                <!-- Confirmar Contraseña -->
-                <div class="form-group">
-                    <label for="confirmar_password">Confirmar Contraseña</label>
-                    <input type="password" id="confirmar_password" name="confirmar_password" required placeholder="Repite tu contraseña">
-                </div>
+            <!-- Botón enviar -->
+            <button type="submit">Enviar</button>
+        </form>
 
-                <!-- Botón Registrar -->
-                <button type="submit" class="btn-registrar" onclick="window.location.href='index.html'">REGISTRAR</button>
+        <div class="info-message">
+            ✅ Los datos se validarán antes de enviar
+        </div>
+    </div>
             </form>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>¿Eres profesional?</p>
-        <a href="registro_profesional.html">REGÍSTRATE AQUÍ</a>
         <p>© 2025 Todos los derechos reservados</p>
     </footer>
 
-    <script src="../js/registro.js"></script>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>

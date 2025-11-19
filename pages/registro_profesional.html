@@ -23,11 +23,17 @@
             <div class="mensaje-error" id="mensajeError"></div>
             <div class="mensaje-exito" id="mensajeExito"></div>
 
-            <form id="formRegistro" action="procesar_registro_profesional.php" method="POST">
+            <form id="formRegistro" action="../php/procesar_registro_profesional.php" method="POST">
                 <!-- Nombre Completo -->
                 <div class="form-group">
                     <label for="nombre">Nombre Completo</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                </div>
+
+                <!-- especialidad Completo -->
+                <div class="form-group">
+                    <label for="especialidad">Especialidad</label>
+                    <input type="text" id="especialidad" name="especialidad" required placeholder="Nutricionista">
                 </div>
 
                 <!-- Correo Electrónico -->
